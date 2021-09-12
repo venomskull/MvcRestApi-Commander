@@ -1,0 +1,8 @@
+dotnet new (shows the list oof templates)
+dotnet new webapi -n Commander
+code -r Commander (open Commander folder in vscode)
+dotnet run 
+
+
+-> binding resources
+https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-5.0
