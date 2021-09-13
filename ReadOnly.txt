@@ -1,8 +1,26 @@
 dotnet new (shows the list oof templates)
 dotnet new webapi -n Commander
 code -r Commander (open Commander folder in vscode)
-dotnet run 
+dotnet run
+dotnet add package Microsoft.EntityFrameworkCore 
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet ef (checking for entity framework. if not installed then follow the below command)
+dotnet tool install --global dotnet-ef (for updating -> dotnet tool update --global dotnet-ef)
+dotnet ef (now it should show a unicorn image)
+dotnet ef migrations add InitialMigration (first step in migration. this will create the structures to be done in the db in a file under migration folder)
+dotnet ef migrations remove (if you need to remove migrations)
+dotnet ef database update (this will do the migation to the db)
+dotnet build
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection (automapper for Data Transfer Objects)
+dotnet add package Microsoft.AspNetCore.JsonPatch (JSON patch)
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson (Newton soft Json)
+
+
 
 
 -> binding resources
 https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-5.0
+
+-> CreatedAtRoute (for getting status 201)
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.createdatroute?view=aspnetcore-5.0
